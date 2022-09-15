@@ -5,12 +5,46 @@
 .team-list {
   @extend %list;
   gap: 30px;
+@media screen and (min-width: 320px) {
+    display: flex;
+  flex-wrap: wrap;
+  }
+ @media screen and (min-width: 480px) {
+    display: flex;
+  flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  flex-wrap: wrap;
+  }
+   @media screen and (min-width: 1200px) {
+    display: flex;
+  flex-wrap: wrap;
+  }
 }
 
 .team-card {
   background-color: $color-white;
   border-radius: 4px;
   box-shadow: $shadow-team;
+}
+
+.team-card__img {
+  @media screen and (min-width: 320px) {
+    min-width: 320px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  height: 460px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  height: 374px;
+  }
+   @media screen and (min-width: 1200px) {
+    width: 270px;
+  height: 260px;
+  }  
 }
 
 .team-card__title {
