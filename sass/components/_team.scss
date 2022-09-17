@@ -5,22 +5,8 @@
 .team-list {
   @extend %list;
   gap: 30px;
-@media screen and (min-width: 320px) {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
-  }
- @media screen and (min-width: 480px) {
-    display: flex;
-  flex-wrap: wrap;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-  flex-wrap: wrap;
-  }
-   @media screen and (min-width: 1200px) {
-    display: flex;
-  flex-wrap: wrap;
-  }
 }
 
 .team-card {
@@ -30,9 +16,9 @@
 }
 
 .team-card__img {
-  @media screen and (min-width: 320px) {
-    min-width: 320px;
-  }
+  // @media screen and (min-width: 320px) {
+  //   min-width: 320px;
+  // }
   @media screen and (min-width: 480px) {
     width: 450px;
   height: 460px;

@@ -117,7 +117,7 @@
     <main>
       <!-- Hero -->
       <div class="hero-background">
-        <section class="section hero">
+        <section class="hero">
           <div class="container">
             <h1 class="main-title">
               Ефективні рішення для <br />
@@ -231,7 +231,9 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-card">
-              <img class="team-card__img" src="./images/team/igor.jpg" alt="Ігор Дем'яненко" />
+              <div class="team-card__img">
+                <img src="./images/team/igor.jpg" alt="Ігор Дем'яненко" />
+              </div>
               <div class="team-card__title">
                 <h3 class="team-card__name">Ігор Дем'яненко</h3>
                 <p class="team-card__item">Product Designer</p>
@@ -268,7 +270,9 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="team-card__img" src="./images/team/olga.jpg" alt="Ольга Рєпіна" />
+              <div class="team-card__img">
+                <img src="./images/team/olga.jpg" alt="Ольга Рєпіна" />
+              </div>
               <div class="team-card__title">
                 <h3 class="team-card__name">Ольга Рєпіна</h3>
                 <p class="team-card__item">Frontend Developer</p>
@@ -305,7 +309,9 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="team-card__img" src="./images/team/mykola.jpg" alt="Микола Тарасов" />
+              <div class="team-card__img">
+                <img src="./images/team/mykola.jpg" alt="Микола Тарасов" />
+              </div>
               <div class="team-card__title">
                 <h3 class="team-card__name">Микола Тарасов</h3>
                 <p class="team-card__item">Marketing</p>
@@ -342,7 +348,9 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="team-card__img" src="./images/team/mykhaylo.jpg" alt="Михайло Єрмаков" />
+              <div class="team-card__img">
+                <img src="./images/team/mykhaylo.jpg" alt="Михайло Єрмаков" />
+              </div>
               <div class="team-card__title">
                 <h3 class="team-card__name">Михайло Єрмаков</h3>
                 <p class="team-card__item">UI Designer</p>
@@ -435,7 +443,7 @@
     </main>
 
     <footer class="footer" id="contacts">
-      <div class="container">
+      <div class="container footer">
         <div class="footer-block">
           <div class="footer-info">
             <a class="logo" href="./index.html"
@@ -497,25 +505,25 @@
               </li>
             </ul>
           </div>
-          <div class="">
-            <h3 class="footer-title">Підпишіться на розсилку</h3>
-            <form class="footer-form">
-              <label for="mail"></label>
-              <input
-                class="footer-form__input"
-                type="email"
-                name="mail"
-                id="mail"
-                placeholder="E-mail"
-              />
-              <button class="footer-button" type="submit">
-                Підписатися
-                <svg class="footer-button__icon">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+        </div>
+        <div class="footer-mailing">
+          <h3 class="footer-title">Підпишіться на розсилку</h3>
+          <form class="footer-form">
+            <label for="mail"></label>
+            <input
+              class="footer-form__input"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="E-mail"
+            />
+            <button class="footer-button" type="submit">
+              Підписатися
+              <svg class="footer-button__icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
