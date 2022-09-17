@@ -36,10 +36,19 @@ img {
 }
 
 .main-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
-  letter-spacing: 0.06em;
+  @media screen and (max-width: 767px) {
+    height: 400px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);    
+    letter-spacing: 0.06em;      
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  // font-weight: 900;
+  // font-size: 44px;
+  // line-height: calc(60 / 44);
+  // letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 0;
   margin-bottom: 30px;
