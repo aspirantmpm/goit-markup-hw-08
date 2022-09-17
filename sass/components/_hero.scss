@@ -3,11 +3,13 @@
 }
 
 .hero {
-  @media screen and (max-width: 767px) {    
+  @media screen and (max-width: 1199px) {
     height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
   }
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
+
   // background-image: $gradient-hero, url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;

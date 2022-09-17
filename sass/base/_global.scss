@@ -31,24 +31,27 @@ img {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
-.main-title {
-  @media screen and (max-width: 767px) {
-    height: 400px;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: calc(42 / 26);    
-    letter-spacing: 0.06em;      
+  @media screen and (max-width: 1199px) {
     padding-top: 118px;
     padding-bottom: 118px;
   }
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: calc(60 / 44);
-  // letter-spacing: 0.06em;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+}
+
+.main-title {
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: calc(42 / 26);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
+  font-weight: 900;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 0;
   margin-bottom: 30px;
