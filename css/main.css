@@ -49,7 +49,7 @@ p {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 .container {
@@ -1240,40 +1240,28 @@ textarea {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 480px) {
-  .project-card .project-card__img {
+  .project-card .project-card__body {
     width: 450px;
-    height: 294px;
-    overflow: hidden;
-  }
-  .project-card .project-card__description {
-    height: 294px;
-    -webkit-transform: translateY(294px);
-            transform: translateY(294px);
   }
 }
 @media screen and (min-width: 768px) {
-  .project-card .project-card__img {
+  .project-card .project-card__body {
     width: 354px;
-    height: 294px;
-    overflow: hidden;
-  }
-  .project-card .project-card__description {
-    height: 294px;
-    -webkit-transform: translateY(294px);
-            transform: translateY(294px);
   }
 }
 @media screen and (min-width: 1200px) {
-  .project-card .project-card__img {
+  .project-card .project-card__body {
     width: 370px;
-    height: 294px;
-    overflow: hidden;
   }
-  .project-card .project-card__description {
-    height: 294px;
-    -webkit-transform: translateY(294px);
-            transform: translateY(294px);
-  }
+}
+
+.project-card__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .project-card__link {
@@ -1294,6 +1282,7 @@ textarea {
   position: absolute;
   top: 0;
   left: 0;
+  height: 294px;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   padding: 63px 24px;
