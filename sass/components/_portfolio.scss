@@ -2,6 +2,9 @@
   @extend %list;
   display: flex;
   flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
   gap: 8px;
 }
 
@@ -40,10 +43,7 @@
   margin-top: 40px;
 }
 
-.project-card {
-  // @media screen and (min-width: 320px) {
-  //   min-width: 320px;
-  // }
+.project-card {  
   @media screen and (min-width: 480px) {
     .project-card__body {
       width: 450px;
@@ -67,8 +67,7 @@
 }
 
 .project-card__img {
-  display: flex;
-  justify-content: center;
+  height: 294px;
 }
 
 .project-card__link {

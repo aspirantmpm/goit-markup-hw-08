@@ -27,6 +27,14 @@
   color: $color-white;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: $gradient-hero, url(../images/bg@2x.jpg);
+  }
+}
+
 .hero-button {
   @extend %button;
   padding: 10px 32px;

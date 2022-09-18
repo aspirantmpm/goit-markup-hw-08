@@ -15,10 +15,7 @@
   box-shadow: $shadow-team;
 }
 
-.team-card__img {
-  // @media screen and (min-width: 320px) {
-  //   min-width: 320px;
-  // }
+.team-card__img { 
   @media screen and (min-width: 480px) {
     width: 450px;
   height: 460px;
