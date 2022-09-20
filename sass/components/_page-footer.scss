@@ -11,13 +11,17 @@
     text-align: center;
   }
   .footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     margin-top: 20px;
-    margin-bottom: 60px;
   }
+
   .footer-socials {
+    margin-top: 60px;
     margin-bottom: 60px;
   }
- 
+
   .footer-form__input {
     width: calc(100% - 30px);
     margin: 0;
@@ -27,34 +31,37 @@
 
 @media screen and (min-width: 768px) {
   .footer {
-    text-align: center;    
+    text-align: center;
   }
   .footer-block {
     display: flex;
     margin-left: 76px;
   }
-
   .footer-info > .logo {
     margin-left: auto;
     margin-right: auto;
   }
   .footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     margin-top: 20px;
     margin-bottom: 60px;
   }
+  
   .footer-socials {
-    margin-bottom: 60px;
     margin-left: 165px;
   }
   .footer-mailing {
     display: block;
   }
 
-  .footer-form__input {    
+  .footer-form__input {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    display: block;
   }
 }
 
@@ -73,17 +80,23 @@
     width: 231px;
     margin-right: 70px;
   }
+  .footer-contact {
+    margin-bottom: 0;
+  }
   .footer-socials {
     width: 206px;
     margin: 0;
     margin-right: 93px;
   }
-
+  .footer>.container {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 0;
+  }
   .footer-title {
     display: flex;
   }
   .footer-form__input {
-    display: flex;
     width: 358px;
     height: 50px;
     margin: 0;

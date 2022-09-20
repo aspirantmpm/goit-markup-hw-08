@@ -1189,7 +1189,7 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 8px;
+  gap: 15px 8px;
 }
 @media screen and (min-width: 768px) {
   .filter-button {
@@ -1219,11 +1219,6 @@ textarea {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .filter-button__item {
-    margin-bottom: 15px;
-  }
 }
 .filter-button__item:hover, .filter-button__item:focus {
   background-color: #2196f3;
@@ -1357,10 +1352,13 @@ textarea {
     text-align: center;
   }
   .footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     margin-top: 20px;
-    margin-bottom: 60px;
   }
   .footer-socials {
+    margin-top: 60px;
     margin-bottom: 60px;
   }
   .footer-form__input {
@@ -1384,11 +1382,13 @@ textarea {
     margin-right: auto;
   }
   .footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     margin-top: 20px;
     margin-bottom: 60px;
   }
   .footer-socials {
-    margin-bottom: 60px;
     margin-left: 165px;
   }
   .footer-mailing {
@@ -1399,6 +1399,7 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1424,10 +1425,22 @@ textarea {
     width: 231px;
     margin-right: 70px;
   }
+  .footer-contact {
+    margin-bottom: 0;
+  }
   .footer-socials {
     width: 206px;
     margin: 0;
     margin-right: 93px;
+  }
+  .footer > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-bottom: 0;
   }
   .footer-title {
     display: -webkit-box;
@@ -1435,9 +1448,6 @@ textarea {
     display: flex;
   }
   .footer-form__input {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 358px;
     height: 50px;
     margin: 0;
