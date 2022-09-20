@@ -2,30 +2,27 @@
   @extend %list;
   gap: 30px;
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .client-card {
-  display: flex;
-  justify-content: center;
+  display: flex;  
   align-items: center;
-  
 }
 
 .client-card__link {
   fill: $color-gray-light;
-  @media screen and (min-width: 480px) {
-    width: 210px;
+  width: 210px;
   height: 92px;
-  }
   @media screen and (min-width: 768px) {
     width: 226px;
-  height: 92px;
+    height: 92px;
   }
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 170px;
-  height: 92px;
-  }  
+    height: 92px;
+  }
   display: flex;
   justify-content: center;
   align-items: center;
