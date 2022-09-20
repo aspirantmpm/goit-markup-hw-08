@@ -35,7 +35,9 @@
   }
   .footer-block {
     display: flex;
-    margin-left: 76px;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;    
   }
   .footer-info > .logo {
     margin-left: auto;
@@ -46,12 +48,9 @@
     padding: 0;
     margin: 0;
     margin-top: 20px;
-    margin-bottom: 60px;
+    
   }
-  
-  .footer-socials {
-    margin-left: 165px;
-  }
+    
   .footer-mailing {
     display: block;
   }

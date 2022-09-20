@@ -15,21 +15,6 @@
   box-shadow: $shadow-team;
 }
 
-.team-card__img { 
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  height: 460px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  height: 374px;
-  }
-   @media screen and (min-width: 1200px) {
-    width: 270px;
-  height: 260px;
-  }  
-}
-
 .team-card__title {
   padding-top: 30px;
   padding-bottom: 30px;

@@ -86,30 +86,32 @@
               <a class="mobile-nav__link" href="#contacts">Контакти</a>
             </li>
           </ul>
-          <ul class="mobile-contact">
-            <li class="mobile-contact__item">
-              <a class="mobile-contact__tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
-            </li>
-            <li class="mobile-contact__item">
-              <a class="mobile-contact__mail" href="mailto:info@devstudio.com">
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="mobile-social">
-            <li class="mobile-social__item">
-              <a href="" class="mobile-social__link">Instagram</a>
-            </li>
-            <li class="mobile-social__item">
-              <a href="" class="mobile-social__link">Twitter</a>
-            </li>
-            <li class="mobile-social__item">
-              <a href="" class="mobile-social__link">Facebook</a>
-            </li>
-            <li class="mobile-social__item">
-              <a href="" class="mobile-social__link">LinkedIn</a>
-            </li>
-          </ul>
+          <div class="mobile-info">
+            <ul class="mobile-contact">
+              <li class="mobile-contact__item">
+                <a class="mobile-contact__tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
+              </li>
+              <li class="mobile-contact__item">
+                <a class="mobile-contact__mail" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Instagram</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Twitter</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Facebook</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -234,14 +236,21 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-card">
-              <div class="team-card__img">
-                <img
-                  srcset="./images/team/igor.jpg 270w, ./images/team/igor@2x.jpg 540w"
-                  src="./images/team/igor.jpg"
-                  alt="Ігор Дем'яненко"
-                  sizes="100vw"
+              <picture class="project-card__img">
+                <source
+                  srcset="./images/team/team1m.jpg 1x, ./images/team/team1m@2x.jpg 2x"
+                  media="(max-width: 767px)"
                 />
-              </div>
+                <source
+                  srcset="./images/team/team1t.jpg 1x, ./images/team/team1t@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/team1.jpg 1x, ./images/team/team1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team/team1.jpg" alt="Ігор Дем'яненко"/>
+              </picture>
               <div class="team-card__title">
                 <h3 class="team-card__name">Ігор Дем'яненко</h3>
                 <p class="team-card__item">Product Designer</p>
@@ -278,14 +287,21 @@
               </div>
             </li>
             <li class="team-card">
-              <div class="team-card__img">
-                <img
-                  srcset="./images/team/olga.jpg 270w, ./images/team/olga@2x.jpg 540w"
-                  src="./images/team/olga.jpg"
-                  alt="Ольга Рєпіна"
-                  sizes="100vw"
+              <picture class="project-card__img">
+                <source
+                  srcset="./images/team/team2m.jpg 1x, ./images/team/team2m@2x.jpg 2x"
+                  media="(max-width: 767px)"
                 />
-              </div>
+                <source
+                  srcset="./images/team/team2t.jpg 1x, ./images/team/team2t@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/team2.jpg 1x, ./images/team/team2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team/team2.jpg" alt="Ольга Рєпіна"/>
+              </picture>
               <div class="team-card__title">
                 <h3 class="team-card__name">Ольга Рєпіна</h3>
                 <p class="team-card__item">Frontend Developer</p>
@@ -322,14 +338,21 @@
               </div>
             </li>
             <li class="team-card">
-              <div class="team-card__img">
-                <img
-                  srcset="./images/team/mykola.jpg 270w, ./images/team/mykola@2x.jpg 540w"
-                  src="./images/team/mykola.jpg"
-                  alt="Микола Тарасов"
-                  sizes="100vw"
+              <picture class="project-card__img">
+                <source
+                  srcset="./images/team/team3m.jpg 1x, ./images/team/team3m@2x.jpg 2x"
+                  media="(max-width: 767px)"
                 />
-              </div>
+                <source
+                  srcset="./images/team/team3t.jpg 1x, ./images/team/team3t@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/team3.jpg 1x, ./images/team/team3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team/team3.jpg" alt="Микола Тарасов"/>
+              </picture>
               <div class="team-card__title">
                 <h3 class="team-card__name">Микола Тарасов</h3>
                 <p class="team-card__item">Marketing</p>
@@ -366,14 +389,21 @@
               </div>
             </li>
             <li class="team-card">
-              <div class="team-card__img">
-                <img
-                  srcset="./images/team/mykhaylo.jpg 270w, ./images/team/mykhaylo@2x.jpg 540w"
-                  src="./images/team/mykhaylo.jpg"
-                  alt="Михайло Єрмаков"
-                  sizes="100vw"
+              <picture class="project-card__img">
+                <source
+                  srcset="./images/team/team4m.jpg 1x, ./images/team/team4m@2x.jpg 2x"
+                  media="(max-width: 767px)"
                 />
-              </div>
+                <source
+                  srcset="./images/team/team4t.jpg 1x, ./images/team/team4t@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/team4.jpg 1x, ./images/team/team4@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team/team4.jpg" alt="Михайло Єрмаков"/>
+              </picture>
               <div class="team-card__title">
                 <h3 class="team-card__name">Михайло Єрмаков</h3>
                 <p class="team-card__item">UI Designer</p>
