@@ -51,18 +51,18 @@
   flex-direction: column;  
   @media screen and (max-width: 767px) {    
     .project-card__down-part {
-      width: 450px;      
+      max-width: 450px;      
     }
   }
   @media screen and (min-width: 768px) {    
     .project-card__down-part {
-      width: 354px;
+      max-width: 354px;
       flex-grow: 1;
     }
   }
   @media screen and (min-width: 1200px) {    
     .project-card__down-part {
-      width: 370px;
+      max-width: 370px;
     }
   }  
   list-style: none;
