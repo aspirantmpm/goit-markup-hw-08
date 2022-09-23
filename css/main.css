@@ -1084,6 +1084,7 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+  margin: 0;
 }
 
 .socials__link, .socials__link--dark, .socials__link--light {
