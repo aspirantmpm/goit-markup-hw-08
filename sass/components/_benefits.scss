@@ -2,25 +2,17 @@
   @extend %list;
   gap: 30px;
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
+  flex-wrap: wrap;   
 }
 
 .benefit-card {
-  @media screen and (max-width: 767px) {
-    width: 450px;
-    height: 226px;
-  }
-   @media screen and (max-width: 1199px) {
-    width: 354px;
-    height: 224px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px)/2);     
   }
    @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 248px;
+  width: calc((100% - 90px)/4);   
   }
 }
-
 .benefit-card__icon-area {
   display: flex;
   justify-content: center;

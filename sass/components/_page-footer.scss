@@ -19,6 +19,9 @@
 
   .footer-socials {
     margin-top: 60px;
+  }
+
+  .footer-block {
     margin-bottom: 60px;
   }
 
@@ -37,7 +40,7 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    margin-bottom: 60px;    
+    margin-bottom: 60px;
   }
   .footer-info > .logo {
     margin-left: auto;
@@ -48,9 +51,8 @@
     padding: 0;
     margin: 0;
     margin-top: 20px;
-    
   }
-    
+
   .footer-mailing {
     display: block;
   }
@@ -87,7 +89,7 @@
     margin: 0;
     margin-right: 93px;
   }
-  .footer>.container {
+  .footer > .container {
     display: flex;
     align-items: baseline;
     padding-bottom: 0;

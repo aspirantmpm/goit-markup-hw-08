@@ -39,7 +39,7 @@
   gap: 30px;
   margin-top: 40px;
   @media screen and (min-width: 768px) {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 50px;
@@ -49,21 +49,16 @@
 .project-card {
   display: flex;
   flex-direction: column;
+  
   @media screen and (max-width: 767px) {
-    .project-card__down-part {
-      max-width: 450px;
-    }
+    max-width: 450px;
   }
   @media screen and (min-width: 768px) {
-    .project-card__down-part {
-      max-width: 354px;
-      flex-grow: 1;
-    }
+    width: calc((100% - 30px) / 2);
+    
   }
   @media screen and (min-width: 1200px) {
-    .project-card__down-part {
-      max-width: 370px;
-    }
+    width: calc((100% - 60px) / 3);
   }
   list-style: none;
   padding: 0;
@@ -126,7 +121,8 @@
   }
 }
 
-.project-card__down-part {
+.project-card__down-part { 
+  flex-grow: 1; 
   border-bottom: 1px solid $color-border;
   border-right: 1px solid $color-border;
   border-left: 1px solid $color-border;

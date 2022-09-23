@@ -431,7 +431,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: auto;
     gap: 50px;
   }
   .logo {
@@ -921,27 +920,16 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .benefit-card {
-    width: 450px;
-    height: 226px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .benefit-card {
-    width: 354px;
-    height: 224px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .benefit-card {
-    width: 270px;
-    height: 248px;
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -1050,6 +1038,16 @@ textarea {
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
+@media screen and (min-width: 768px) {
+  .team-card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-card {
+    width: calc((100% - 90px) / 4);
+  }
+}
 
 .team-card__title {
   padding-top: 30px;
@@ -1148,11 +1146,23 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .client-card {
+    height: 92px;
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-card {
+    height: 92px;
+    width: calc((100% - 150px) / 6);
+  }
+}
 
 .client-card__link {
+  width: 100%;
+  height: 100%;
   fill: #afb1b8;
-  width: 210px;
-  height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1170,18 +1180,6 @@ textarea {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 768px) {
-  .client-card__link {
-    width: 226px;
-    height: 92px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .client-card__link {
-    width: 170px;
-    height: 92px;
-  }
 }
 .client-card__link:hover, .client-card__link:focus {
   border: 1px solid #2196f3;
@@ -1250,7 +1248,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .project {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1279,21 +1277,18 @@ textarea {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
-  .project-card .project-card__down-part {
+  .project-card {
     max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
-  .project-card .project-card__down-part {
-    max-width: 354px;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+  .project-card {
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .project-card .project-card__down-part {
-    max-width: 370px;
+  .project-card {
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -1330,7 +1325,6 @@ textarea {
   height: 294px;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  padding: 63px 24px;
   font-size: 18px;
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
@@ -1345,6 +1339,21 @@ textarea {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 767px) {
+  .project-card__description {
+    padding: 77px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-card__description {
+    padding: 49px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-card__description {
+    padding: 63px 24px;
+  }
+}
 .project-card__link:hover .project-card__description, .project-card__link:focus .project-card__description {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1353,6 +1362,9 @@ textarea {
 }
 
 .project-card__down-part {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border-bottom: 1px solid #ececec;
   border-right: 1px solid #ececec;
   border-left: 1px solid #ececec;
@@ -1397,6 +1409,8 @@ textarea {
   }
   .footer-socials {
     margin-top: 60px;
+  }
+  .footer-block {
     margin-bottom: 60px;
   }
   .footer-form__input {
