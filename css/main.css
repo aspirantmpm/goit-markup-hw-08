@@ -1146,6 +1146,12 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .client-card {
+    height: 92px;
+    width: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (min-width: 768px) {
   .client-card {
     height: 92px;

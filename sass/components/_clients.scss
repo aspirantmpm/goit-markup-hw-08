@@ -9,6 +9,10 @@
 .client-card {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    height: 92px;
+    width: calc((100% - 30px) / 2);
+  }
   @media screen and (min-width: 768px) {
     height: 92px;
     width: calc((100% - 60px) / 3);
